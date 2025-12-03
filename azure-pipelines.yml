@@ -1,0 +1,29 @@
+resources:
+ repositories:
+   - repository: self
+
+variables:
+  - group: globel-variables
+  - group: vnet-variables
+  - group: vm_variables
+  - group: acr-variables
+  
+
+pool: pool # slef hosted VM
+
+stages:
+  - stage:  vnet
+    jobs:
+      - job: create_vnet
+        displayName: 'createing v net'
+        steps:
+          - checkout: slef
+          - task: TerraformInstaller@1
+            inputs:
+              terraformVersion: 'latest'
+          - task: TerraformTask@5
+            inputs:
+              provider: 'azurerm'
+              command: 'init'
+              commandOptions: 'fgfg'
+              backendServiceArm: 'Azure subscription 1(25e8c454-3a15-4844-8f5b-c9998fd32ba9)'
