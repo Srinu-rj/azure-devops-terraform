@@ -1,0 +1,11 @@
+variable "location" { type = string }
+variable "resource_group_name" { type = string }
+variable "datadog_monitor_name" { type = string }
+variable "data_dog_email_id" { type = string }
+variable "data_dog_user_name" { type = string }
+variable "api_key" { type = string }
+variable "application_key" { type = string }
+variable "subscription_id" { type = string }
+variable "tenant_id" { type = string }
+variable "client_id" { type = string }
+variable "client_secret" { type = string }
