@@ -10,7 +10,7 @@ pool:
   demands:
     - JDK -equals 17
     - Terraform -equals Yes
-    - Agent.Name -equals ProdADO
+    - Agent.Name -equals azure-pool
 
 
 variables:
