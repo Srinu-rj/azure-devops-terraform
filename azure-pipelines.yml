@@ -1,12 +1,10 @@
-resources:
- repositories:
-   - repository: self
+
 
 variables:
   - group: globel-variables
-  - group: vnet-variables
-  - group: vm_variables
-  - group: acr-variables
+  # - group: vnet-variables
+  # - group: vm_variables
+  # - group: acr-variables
   
 
 pool: pool # slef hosted VM
