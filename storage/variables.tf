@@ -1,5 +1,3 @@
-variable "example" { type = string }
-variable "srinu143raju" { type = string }
-variable "resource_group" { type = string }
-variable "location" { type = string}
-variable "storage_name" {type = string}
+variable "RESOURCE_GROUP" { type = string }
+variable "LOCATION" { type = string}
+variable "STORAGE_NAME" {type = string}

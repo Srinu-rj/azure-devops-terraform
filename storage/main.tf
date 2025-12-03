@@ -1,11 +1,11 @@
 resource "azurerm_resource_group" "example" {
-  name     = var.resource_group
-  location = var.location
+  name     = var.RESOURCE_GROUP
+  location = var.LOCATION
 }
 
 # Create a storage account
 resource "azurerm_storage_account" "srinu143raju" {
-  name                     = var.storage_name
+  name                     = var.STORAGE_NAME
   resource_group_name      = azurerm_resource_group.example.name
   location                 = azurerm_resource_group.example.location
   account_tier             = "Standard"
