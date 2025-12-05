@@ -13,6 +13,8 @@ pool:
 
 stages:
   - stage:  dev
+    pool:
+     name: pool
     jobs:
       - job: create_vnet
         displayName: 'createing v net'
@@ -33,6 +35,8 @@ stages:
           - script: trivy config vnet/ 
                    
   - stage:  QA
+    pool: 
+      name: pool
     jobs:
       - job: create_vnet
         displayName: 'createing v net'
