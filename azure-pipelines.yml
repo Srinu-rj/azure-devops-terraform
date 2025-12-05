@@ -1,29 +1,40 @@
-resources:
- repositories:
-   - repository: self
+trigger:
+  branches:
+    include:
+      - main
+      - production
+    exclude: ["master", "feature*", "README.md"]
+
+pool:
+  name: pool
+  demands:
+    - JDK -equals 17
+    - Terraform -equals Yes
+    - Agent.Name -equals azure-pool
+
 
 variables:
-  - group: globel-variables
-  - group: vnet-variables
-  - group: vm_variables
-  - group: acr-variables
-  
-
-pool: pool # slef hosted VM
+- group: globel-variables   # reference your variable group
+- name: globel_version
+  value: "1.0.0"
+- name: global_email
+  value: "dnsrinu143@gmail.com"
+- name: isDev
+  value: $[eq(variables['Build.SourceBranch'], 'refs/heads/development')]
+- name: isProd
+  value: $[eq(variables['Build.SourceBranch'], 'refs/heads/production')]
 
 stages:
   - stage:  vnet
     jobs:
       - job: create_vnet
         displayName: 'createing v net'
+        variables:
+          job_version: "3.0.0"
+          job_email: "saiaws@gmail.com"
+        timeoutInMinutes: 5
         steps:
-          - checkout: slef
+          - checkout: none
           - task: TerraformInstaller@1
             inputs:
               terraformVersion: 'latest'
-          - task: TerraformTask@5
-            inputs:
-              provider: 'azurerm'
-              command: 'init'
-              commandOptions: 'fgfg'
-              backendServiceArm: 'Azure subscription 1(25e8c454-3a15-4844-8f5b-c9998fd32ba9)'
