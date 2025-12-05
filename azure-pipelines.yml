@@ -12,7 +12,7 @@ pool:
 
 
 stages:
-  - stage:  vnet
+  - stage:  dev
     jobs:
       - job: create_vnet
         displayName: 'createing v net'
@@ -25,3 +25,16 @@ stages:
           - task: TerraformInstaller@1
             inputs:
               terraformVersion: 'latest'
+  - stage:  QA
+    jobs:
+      - job: create_vnet
+        displayName: 'createing v net'
+        variables:
+          job_version: "3.0.0"
+          job_email: "saiaws@gmail.com"
+        timeoutInMinutes: 5
+        steps:
+          - checkout: none
+          - task: TerraformInstaller@1
+            inputs:
+              terraformVersion: 'latest'              
