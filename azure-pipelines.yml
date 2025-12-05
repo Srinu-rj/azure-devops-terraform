@@ -30,7 +30,7 @@ stages:
         steps:
           - script: trivy repo https://github.com/Srinu-rj/azure-devops-terraform.git
             displayName: 'scanning manifest repository'
-          - script: trivy config azure-devops-terraform/vnet
+          - script: trivy config vnet/
                    
   - stage:  QA
     jobs:
