@@ -34,19 +34,6 @@ stages:
           - script: trivy repo https://github.com/Srinu-rj/azure-devops-terraform.git
             displayName: 'scanning manifest repository'
           - script: trivy config vnet/ 
-      - job: terraform_plam
-        displayName: 'Terraform Plan'
-        steps:
-          - task: TerraformTaskV4@4
-            inputs:
-              provider: 'azurerm'
-              command: 'init'
-              workingDirectory: '$(Build.SourcesDirectory)/agent-vm'
-              backendServiceArm: 'Azure subscription 1(25e8c454-3a15-4844-8f5b-c9998fd32ba9)'
-              backendAzureRmResourceGroupName: 'v-net'
-              backendAzureRmStorageAccountName: 'mystorage1791'
-              backendAzureRmContainerName: 'tfstates'
-              backendAzureRmKey: 'vm.tfstate'
              
                    
   - stage:  QA
