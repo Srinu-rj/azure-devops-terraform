@@ -25,6 +25,13 @@ stages:
           - task: TerraformInstaller@1
             inputs:
               terraformVersion: 'latest'
+      - job: scanning_terrafrom_manifest
+        displayName: 'Scanning Terraform Manifest'
+        steps:
+          - script: trivy repo https://github.com/Srinu-rj/azure-devops-terraform.git
+            displayName: 'scanning manifest repository'
+          - script: trivy config azure-devops-terraform/vnet
+                   
   - stage:  QA
     jobs:
       - job: create_vnet
