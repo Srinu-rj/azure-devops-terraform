@@ -7,22 +7,9 @@ trigger:
 
 pool:
   name: pool
-  demands:
-    - JDK -equals 17
-    - Terraform -equals Yes
-    - Agent.Name -equals azure-pool
 
 
-variables:
-- group: globel-variables   # reference your variable group
-- name: globel_version
-  value: "1.0.0"
-- name: global_email
-  value: "dnsrinu143@gmail.com"
-- name: isDev
-  value: $[eq(variables['Build.SourceBranch'], 'refs/heads/development')]
-- name: isProd
-  value: $[eq(variables['Build.SourceBranch'], 'refs/heads/production')]
+
 
 stages:
   - stage:  vnet
