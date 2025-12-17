@@ -7,25 +7,15 @@ trigger:
 
 pool:
   name: pool
-  demands:
-    - JDK -equals 17
-    - Terraform -equals Yes
-    - Agent.Name -equals azure-pool
-
 
 variables:
-- group: globel-variables   # reference your variable group
-- name: globel_version
-  value: "1.0.0"
-- name: global_email
-  value: "dnsrinu143@gmail.com"
-- name: isDev
-  value: $[eq(variables['Build.SourceBranch'], 'refs/heads/development')]
-- name: isProd
-  value: $[eq(variables['Build.SourceBranch'], 'refs/heads/production')]
+  - group: globel-variables
+
 
 stages:
-  - stage:  vnet
+  - stage:  dev
+    pool:
+     name: pool
     jobs:
       - job: create_vnet
         displayName: 'createing v net'
@@ -38,3 +28,33 @@ stages:
           - task: TerraformInstaller@1
             inputs:
               terraformVersion: 'latest'
+      - job: scanning_terrafrom_manifest
+        displayName: 'Scanning Terraform Manifest'
+        steps:
+          - script: trivy repo https://github.com/Srinu-rj/azure-devops-terraform.git
+            displayName: 'scanning manifest repository'
+          - script: trivy config vnet/ 
+             
+                   
+  - stage:  QA
+    pool: 
+      name: pool
+    jobs:
+      - job: create_vnet
+        displayName: 'createing v net'
+        variables:
+          job_version: "3.0.0"
+          job_email: "saiaws@gmail.com"
+        timeoutInMinutes: 5
+        steps:
+          - checkout: none
+          - task: TerraformInstaller@1
+            inputs:
+              terraformVersion: 'latest'  
+      - job: scanning_terrafrom_manifest
+        displayName: 'Scanning Terraform Manifest'
+        steps:
+          - script: trivy repo https://github.com/Srinu-rj/azure-devops-terraform.git
+            displayName: 'scanning manifest repository'
+          - script: trivy config vnet/ 
+            displayName: 'valunaburites checking '                    
