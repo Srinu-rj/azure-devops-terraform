@@ -1,0 +1,7 @@
+image_size=""
+aks_rg_name=""
+public_ip_name=""
+agent_vm_name=""
+admin_username=""
+admin_password=""
+prefix=""
