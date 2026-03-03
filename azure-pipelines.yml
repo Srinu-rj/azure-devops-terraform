@@ -1,0 +1,60 @@
+trigger:
+  branches:
+    include:
+      - main
+      - production
+    exclude: ["master", "feature*", "README.md"]
+
+pool:
+  name: pool
+
+variables:
+  - group: globel-variables
+
+
+stages:
+  - stage:  dev
+    pool:
+     name: pool
+    jobs:
+      - job: create_vnet
+        displayName: 'createing v net'
+        variables:
+          job_version: "3.0.0"
+          job_email: "saiaws@gmail.com"
+        timeoutInMinutes: 5
+        steps:
+          - checkout: none
+          - task: TerraformInstaller@1
+            inputs:
+              terraformVersion: 'latest'
+      - job: scanning_terrafrom_manifest
+        displayName: 'Scanning Terraform Manifest'
+        steps:
+          - script: trivy repo https://github.com/Srinu-rj/azure-devops-terraform.git
+            displayName: 'scanning manifest repository'
+          - script: trivy config vnet/ 
+             
+                   
+  - stage:  QA
+    pool: 
+      name: pool
+    jobs:
+      - job: create_vnet
+        displayName: 'createing v net'
+        variables:
+          job_version: "3.0.0"
+          job_email: "saiaws@gmail.com"
+        timeoutInMinutes: 5
+        steps:
+          - checkout: none
+          - task: TerraformInstaller@1
+            inputs:
+              terraformVersion: 'latest'  
+      - job: scanning_terrafrom_manifest
+        displayName: 'Scanning Terraform Manifest'
+        steps:
+          - script: trivy repo https://github.com/Srinu-rj/azure-devops-terraform.git
+            displayName: 'scanning manifest repository'
+          - script: trivy config vnet/ 
+            displayName: 'valunaburites checking '                    

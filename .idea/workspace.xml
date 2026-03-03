@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="20bd59b6-1af9-4db1-99b5-606cac71b448" name="Changes" comment="with modules">
+      <change afterPath="$PROJECT_DIR$/moduals/CDN/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/api-management/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/api-management/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/api-management/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/application-getway/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/application-getway/outputs.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/application-getway/prod.tfvars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/application-getway/qa.tfvars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/auto-scalling/auto-scalling-monitor.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/azure-cost-alerts/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/azure-cost-alerts/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/azure-service-bus/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/dns/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/dns/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-aks/16-velero-back-up.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-aks/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-aks/script/velero-back-up.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-aks/script/verify-velero.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-azure-devops/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-azure-devops/agent-pool.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-azure-devops/branch-policies.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-azure-devops/devops-pipelines.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-azure-devops/devops-projects.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-azure-devops/environment-and-approvals.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-azure-devops/feed.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-azure-devops/git-repos.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-azure-devops/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-azure-devops/service-connetions.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-azure-devops/team-group-management.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-dns/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-vnet/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-vnet/self-hosted-agent-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-vnet/self-hosted-agent-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/private-vnet/verify-all-tools-packages.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/rbac/custom-roles.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moduals/storage/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-azure-devops-rest-apis/Pipeline-REST-API.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-azure-devops-rest-apis/azure-devop-organization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-azure-devops-rest-apis/bulk-pipeline-creation-standardized-projects.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-azure-devops-rest-apis/handling-rate-limits-errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-azure-devops-rest-apis/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-azure-devops-rest-apis/monitoring-pipeline-runs-getting-results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-azure-devops-rest-apis/org.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/CDN/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/CDN/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/CDN/front_door.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/CDN/input.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/CDN/values.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/CDN/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/CDN/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/CDN/storage.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/CDN/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/CDN/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/application-getway/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/application-getway/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/application-getway/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/application-getway/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/application-getway/values.tfvars.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/application-getway/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/application-getway/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/auto-scalling/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/auto-scalling/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/devops/README.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/devops/agent_pool.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/devops/core-devops.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/devops/extension.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/devops/provider.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/devops/service_endpoint_docker_registry.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/devops/values.tfvars.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/devops/varibles.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/dns/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/dns/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/dns/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/dns/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/dns/values.tfvars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/dns/values.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/dns/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/dns/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/key-vault/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/key-vault/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/monitoring/acr-input.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/CDN/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/monitoring/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/monitoring/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/private-aks/01-provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/private-aks/01-provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/private-aks/02-main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/private-aks/02-main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/private-vnet/input.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/private-vnet/input.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/private-vnet/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/private-vnet/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/private-vnet/self-hosted-agent.sh" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/private-vnet/self-hosted-agent.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/private-vnet/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/private-vnet/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/rbac/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/rbac/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/storage/acr-input.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/storage/acr-input.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/storage/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/storage/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/storage/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/storage/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/vnet-network/input.tfvars.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/vnet-network/inputs.tfvars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/moduals/private-azure-devops/variable-groups.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/vnet-network/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/vnet-network/provider.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduals/vnet-network/variables.tf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Main" />
+        <option value="Variables" />
+        <option value="Outputs" />
+        <option value="Python Script" />
+        <option value="Empty File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Srinu-rj&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Srinu-rj/azure-devops-terraform.git&quot;,
+    &quot;accountId&quot;: &quot;ddb0854e-2505-47ec-88ed-c00708edc0c9&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="369nPCAfdEOTBb3YWyuIhhwqXtL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "C:\\Users\\dnsri\\AppData\\Roaming\\JetBrains\\IntelliJIdea2025.3\\plugins\\Shell Script\\shellcheck.exe",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "ignore_missing_gitignore": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/azure-devops-terraform/moduals/private-dns",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\azure-devops-terraform\moduals\private-dns" />
+      <recent name="D:\azure-devops-terraform\moduals\application-getway" />
+      <recent name="D:\azure-devops-terraform\moduals\private-vnet" />
+      <recent name="D:\azure-devops-terraform\moduals\private-azure-devops" />
+      <recent name="D:\azure-devops-terraform\moduals\azure-cost-alerts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\azure-devops-terraform\moduals" />
+      <recent name="D:\azure-devops-terraform\with-modules\moduals" />
+      <recent name="D:\azure-devops-terraform\with-out-modules\aks" />
+      <recent name="D:\azure-devops-terraform\with-out-modules" />
+      <recent name="D:\azure-devops-terraform\private-aks\moduals" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="1d8a5aa3-e5a8-40ba-b06d-0d45dbcdc0c0" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="azure-devops-terraform" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="azure-devops-terraform" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="azure-devops-terraform" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="azure-devops-terraform" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="azure-devops-terraform" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="azure-devops-terraform" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20bd59b6-1af9-4db1-99b5-606cac71b448" name="Changes" comment="" />
+      <created>1764427628988</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764427628988</updated>
+    </task>
+    <task id="LOCAL-00001" summary="azure terraform">
+      <option name="closed" value="true" />
+      <created>1764749527441</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764749527441</updated>
+    </task>
+    <task id="LOCAL-00002" summary="azure terraform">
+      <option name="closed" value="true" />
+      <created>1764749531606</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764749531606</updated>
+    </task>
+    <task id="LOCAL-00003" summary="azure terraform V:1.0">
+      <option name="closed" value="true" />
+      <created>1764752969084</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764752969084</updated>
+    </task>
+    <task id="LOCAL-00004" summary="azure terraform vnet V:1.0">
+      <option name="closed" value="true" />
+      <created>1764919349623</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764919349624</updated>
+    </task>
+    <task id="LOCAL-00005" summary="azure terraform vnet V:1.0">
+      <option name="closed" value="true" />
+      <created>1764925844057</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764925844057</updated>
+    </task>
+    <task id="LOCAL-00006" summary="azure terraform vnet V:2.0">
+      <option name="closed" value="true" />
+      <created>1765974308490</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765974308491</updated>
+    </task>
+    <task id="LOCAL-00007" summary="azure terraform vnet_acr V:2.0">
+      <option name="closed" value="true" />
+      <created>1766065698084</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1766065698085</updated>
+    </task>
+    <task id="LOCAL-00008" summary="azure terraform vnet_acr V:2.0">
+      <option name="closed" value="true" />
+      <created>1766065709481</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1766065709481</updated>
+    </task>
+    <task id="LOCAL-00009" summary="azure terraform CDN V:2.0">
+      <option name="closed" value="true" />
+      <created>1766566237606</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1766566237606</updated>
+    </task>
+    <task id="LOCAL-00010" summary="azure terraform CDN V:2.0">
+      <option name="closed" value="true" />
+      <created>1766989777895</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1766989777897</updated>
+    </task>
+    <task id="LOCAL-00011" summary="with modules">
+      <option name="closed" value="true" />
+      <created>1770961419822</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1770961419822</updated>
+    </task>
+    <task id="LOCAL-00012" summary="with modules">
+      <option name="closed" value="true" />
+      <created>1772169443599</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1772169443601</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="azure terraform" />
+    <MESSAGE value="azure terraform V:1.0" />
+    <MESSAGE value="azure terraform vnet V:1.0" />
+    <MESSAGE value="azure terraform vnet V:2.0" />
+    <MESSAGE value="azure terraform vnet_acr V:2.0" />
+    <MESSAGE value="azure terraform CDN V:2.0" />
+    <MESSAGE value="with modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="with modules" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
